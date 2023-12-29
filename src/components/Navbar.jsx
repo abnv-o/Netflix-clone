@@ -1,9 +1,9 @@
 import React from "react";
+import Button from "./Button";
+import { Link } from "react-router-dom";
 
 function Navbar() {
-  
   function click() {
-    
     console.log("clicked");
     document.getElementById("hambuttons").classList.toggle("hidden");
   }
@@ -13,20 +13,17 @@ function Navbar() {
     <div className="flex flex-col gap-4 justify-between  py-4  item-center md:flex-row mx-8">
       <div className="flex justify-between items-center w-full">
         {/* netflix text */}
+
         <div className=" flex justify-center ">
           <h1 className="text-3xl text-red-500 tracking-widest md:text-4xl">
-            NETFLIX
+            <Link to="/mainpage">NETFLIX</Link>
           </h1>
         </div>
 
         {/* Buttons */}
         <div className="hidden  md:flex gap-6 ">
-          <button className="border-2 border-black px-3 text-white bg-red-500 rounded-lg">
-            Language
-          </button>
-          <button className="border-2 border-red-500 px-5 text-white rounded-lg">
-            Sign in
-          </button>
+          <Button title="SignUP" link="/signup" colour="border-red-500" />
+          <Button title="Login" link="/login" colour="border-red-500"/>
         </div>
 
         {/* Hamburger */}

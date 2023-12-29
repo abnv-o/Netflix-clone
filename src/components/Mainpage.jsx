@@ -1,7 +1,7 @@
-import React from 'react'
-import Hero from './Hero'
-import Content from'./Content'
-import Faq from './Faq'
+import React from "react";
+import Hero from "./Hero";
+import Content from "./Content";
+import Faq from "./Faq";
 
 const mainpage = () => {
   return (
@@ -27,7 +27,7 @@ const mainpage = () => {
       />
       <Faq />
     </div>
-  )
-}
+  );
+};
 
-export default mainpage
+export default mainpage;
